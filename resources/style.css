@@ -21,7 +21,7 @@
         --text-color: hsla(10, 0%, 30%, 1);
         --link-color: black;
         --banner-height: 30rem;
-        --banner-image: url(./imgs/London-Ontario-Skyline.webp)
+        --banner-image: url(imgs/London-Ontario-Skyline.avif), url(imgs/London-Ontario-Skyline.webp)
 
     }
     
@@ -481,7 +481,7 @@
 }
 
 .bg-1 {
-    background-image: url(imgs/Office-Interior.webp);
+    background-image: url(imgs/Office-Interior.avif), url(imgs/Office-Interior.webp);
     display: flex;
     flex-direction: row;
     justify-content: space-around;

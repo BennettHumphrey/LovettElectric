@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/style.css">
+    <script defer src="resources/script.js"></script>
+    <title>COMPANYNAME</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 id="best-company">Best Electrical Company in CITYNAME</h1>
+            <h1 id="phone-number">PHONENUMBER</h1>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li>
+                    <div class="dropdown" data-dropdown>
+                        <button class="link" data-dropdown-button>Services</button>
+                        <div class="dropdown-menu information-grid">
+                          <div>
+                            <div class="dropdown-heading">Free Tutorials</div>
+                                <div class="dropdown-links">
+                                    <a href="#" class="link">All</a>
+                                    <a href="#" class="link">Lorem ipsum dolor sit amet.</a>
+                                    <a href="#" class="link">Popular</a>
+                                </div>
+                          </div>
+                          <div>
+                            <div class="dropdown-heading">Other</div>
+                                <div class="dropdown-links">
+                                <a href="#" class="link">Twitter</a>
+                                    <a href="#" class="link">Newsletter</a>
+                                    <a href="#" class="link">Discord</a>
+                                </div>
+                          </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#our-team">Our Team</a></li>
+            </ul>
+        </nav>
+
+        <section class="banner">
+            <div class="company-logo">
+                <img src="resources/imgs/company-logo.png" alt="COMPANYNAME logo">
+            </div>
+
+            <div class="banner-info">
+                <h2 class="banner-phone">To contact an electrician call<br>PHONENUMBER now!</h2>
+                
+                <button data-modal-target="#modal" class="button">Request a Service!</button>
+                
+            </div>
+
+    </header>
+    <main>
+
+        <div class="modal" id="modal">
+            <div class="pop-up">
+                <div id="pop-up-container">
+                    <h1>Request a Service!</h1>
+                    <form target="_blank" action="https://formsubmit.co/f3f67705fd63048a39353bfe235a5ac6" method="POST">
+                      <div class="form-group">
+                        <div class="form-row">
+                          <div class="col">
+                            <input type="text" name="Name" class="form-control" placeholder="Full Name" required>
+                          </div>
+                          <div class="col">
+                            <input type="email" name="Email" class="form-control" placeholder="Email Address" required>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <textarea placeholder="Your Message" class="form-control" name="Message" rows="10" required></textarea>
+                      </div>
+                      <button type="submit" class="submit">Submit Form</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="overlay"></div> 
+
+
+
+        <section class="main">
+            <div class="blank-1 main-container">
+                <h2>We do all types of commercial projects!</h2>
+                <ul class="services-list">
+                    <div class="services-list-container">
+                        <li>Communication Systems</li>
+                        <li>Control Wiring</li>
+                        <li>Data Cabling</li>
+                        <li>Design-Build (With stamped engineered drawings</li>
+                        <li>Emergency Standby Power</li>
+                    </div>
+                        <div class="services-list-container">
+                            <li>Fire Alarm Systems</li>
+                            <li>Lighting Planning & Installations</li>
+                            <li>New Construction</li>
+                            <li>Remodelling</li>
+                            <li>Maintinence</li>
+                        </div>
+                    <div class="services-list-container">
+                        <li>Renovations/Additions</li>
+                        <li>Retro-fitting</li>
+                        <li>Re-wiring</li>
+                        <li>Service Work</li>
+                        <li>System Upgrades</li>
+                    </div>
+                </ul>
+            </div>
+            <div class="bg-1 main-container">
+                <div class="projects-container">
+                    <h2>Electrical Projects</h2>
+                    <p>The installation, maintenance, renovation or repair of any electrical equipment, control system, or electrical device attached to a structure.</p>
+                </div>
+                <div class="projects-container">
+                    <h2>Voice Data Communications</h2>
+                    <p>Industrial or commercial routing, connection and maintenance of fibre optic cable systems.</p>
+                </div>
+            </div>
+
+
+
+        <footer>
+            <div class="footer-flex">
+                <div class="footer-container">
+                    <figure>
+                       <img src="resources/imgs/electrician.jfif" alt="">
+                    </figure>
+                    <figcaption>
+                        Seriously. Fuck Brad.
+                    </figcaption>
+                </div>
+    
+                <div class="footer-container">
+                    <figure>
+                       <img src="resources/imgs/electrician.jfif" alt="">
+                    </figure>
+                    <figcaption>
+                        Seriously. Fuck Brad.
+                    </figcaption>
+                </div>
+                
+                <div class="footer-container">
+                    <figure>
+                        <img src="resources/imgs/electrician.jfif" alt="">
+                    </figure>
+                    <figcaption>
+                        Seriously. Fuck Brad.
+                    </figcaption>
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright (C) 2009 Lovett Electric Ltd. London, Ontario Canada - All Rights Reserved
+            </div>
+        </footer>
+    </body>
+    </html>

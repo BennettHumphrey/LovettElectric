@@ -458,7 +458,7 @@
 }
 
 .bg-2 {
-    background-image: url(imgs/Person-Installing-Breakers.jpg);
+    background-image: url(imgs/Person-Installing-Breakers.webp);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -484,6 +484,27 @@
 
 .about-us-bg > p {
     line-height: 1.8;
+}
+
+@media only screen and (max-width: 700px) {
+    .bg-2 {
+        flex-direction: column;
+    }
+
+    .about-us-blank > p {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .about-us-bg > p {
+        line-height: 1.4;
+    }
+
+    .about-us-blank > p {
+        width: 85%;
+        line-height: 1.4;
+    }
 }
 
 #contact-us {
@@ -535,6 +556,7 @@ iframe {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
+
     .address-container {
         bottom: 2rem;
         right: 0;

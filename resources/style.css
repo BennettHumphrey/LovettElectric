@@ -33,6 +33,7 @@
         height: 100%;
         margin: 0px;
         padding: 0px;
+        scroll-behavior: smooth;
     }
 
     header {
@@ -121,67 +122,7 @@
     /* NAV END */
     
     
-    /* DROPDOWN START*/
-    
-      
-      .link {
-        background: none;
-        border: none;
-        text-decoration: none;
-        font-family: inherit;
-        font-size: inherit;
-        cursor: pointer;
-        padding: 0;
-        color: var(--link-color);
-      }
-      
-      .dropdown.active > .link,
-      .link:hover {
-        color: var(--link-color);
-        text-decoration: underline;
-      }
-      
-      .dropdown {
-        position: relative;
-      }
-      
-      .dropdown-menu {
-        position: absolute;
-        /* v DROPDOWN POSITION ADJUST v */
-        right: -130%;
-        top: calc(100% + 40%);
-        /* ^ DROPDOWN POSITION ADJUST ^ */
-        background-color: white;
-        padding: .75rem;
-        border-radius: 1rem;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
-        opacity: 0;
-        pointer-events: none;
-        transform: translateY(-10px);
-        transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
-        width: auto;
-      }
-      
-      .dropdown.active > .link + .dropdown-menu {
-        opacity: 1;
-        transform: translateY(0);
-        pointer-events: auto;
-      }
-      
-      .information-grid {
-        display: grid;
-        grid-template-columns: repeat(2, max-content);
-        gap: 2rem;
-      }
-      
-      .dropdown-links {
-        display: flex;
-        flex-direction: column;
-        gap: .25rem;
-      }
-    
-    
-      /*DROPDOWN END */
+
     
     
       /*MODAL START*/
@@ -450,8 +391,10 @@
 }
 
 .services-list-container {
-    margin: 1rem 7rem;
+    margin: 1rem 2rem;
 }
+
+
 
 [class ^= bg] > h2 {
     color: white;
@@ -459,6 +402,7 @@
 
 [class ^= blank] > h2 {
     color: black;
+    padding-bottom: 1rem;
 }
 
 .main-container > p {
@@ -495,8 +439,112 @@
     color: #fff;
 }
 
+@media only screen and (max-width: 700px) {
+    .blank-1 {
+        height: 50rem;
+    }
+
+    .services-list {
+        flex-direction: column;
+    }
+
+    .projects-container {
+        width: 80%;
+    }
+
+    .bg-1 {
+        flex-direction: column;
+    }
+}
+
+.bg-2 {
+    background-image: url(imgs/Person-Installing-Breakers.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.blank-2 {
+    height: 28rem;
+}
+
+.about-us-blank > h2 {
+    border-bottom: 1px solid #000;
+    padding-bottom: 0.2rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.about-us-blank > p {
+    width: 35%;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.about-us-bg > p {
+    line-height: 1.8;
+}
+
+#contact-us {
+    margin-bottom: 2rem;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.address-container {
+    position: relative;
+    bottom: 2rem;
+    right: 5rem;
+    margin-right: 30%;
+    line-height: 2;
+    width: 100%;
+}
+
+.contact-address {
+    margin-top: 2rem;
+}
+
+.contact-email {
+    margin-top: 2rem;
+}
+
+.map-container {
+    height: 100%;
+    width: 100%;
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+}
 
 
+@media only screen and (max-width: 500px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .address-container {
+        bottom: 2rem;
+        right: 0;
+    }
+
+    .blank-3 {
+        height: 40rem;
+    }
+}
 
     /* MAIN BODY END */
 
@@ -513,26 +561,22 @@ footer {
 .footer-flex {
     display: flex;
     max-height: 10rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: var(--dark-color);
     bottom: 0;
     justify-content: space-around;
+    align-items: center;
 }
 
 .footer-container {
     max-height: 8rem;
     overflow: hidden;
+    margin: 0 4%;
 }
 
-.footer-container figure img {
-    height: 4rem;
-}
 
-.copyright {
-    background-color: var(--dark-color);
-    padding: 1rem;
-    color: var(--main-color);
-}
+
 
 
 /* FOOTER END */

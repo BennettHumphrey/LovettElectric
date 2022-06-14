@@ -105,12 +105,19 @@
             display: inline;
         }
     }
-    
-    @media only screen and (max-width: 493px) {
-        nav {
-            height: 4rem;
+
+    @media only screen and (max-width: 350px) {
+        #phone-number {
+            left: 2px;
+            font-size: 1.1rem;
+            top: 9px;
+        }
+
+        nav li {
+            padding: 0.5rem 4px 0.375rem 0;
         }
     }
+
     
     @media only screen and (max-width: 301px) {
         nav ul li {

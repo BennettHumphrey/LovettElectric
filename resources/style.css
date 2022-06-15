@@ -96,7 +96,7 @@
         color: var(--text-color)
     }
     
-    @media only screen and (max-width: 840px) {
+    @media only screen and (max-width: 700px) {
         #best-company {
             display: none;
         }
@@ -152,31 +152,9 @@
       .modal.active {
         transform: translate(-50%, -50%) scale(1);
       }
-      
-      .modal-header {
-        padding: 10px 15px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid black;
-      }
-      
-      .modal-header .title {
-        font-size: 1.25rem;
-        font-weight: bold;
-      }
-      
-      .modal-header .close-button {
-        cursor: pointer;
-        border: none;
-        outline: none;
-        background: none;
-        font-size: 1.25rem;
-        font-weight: bold;
-      }
-      
-      .modal-body {
-        padding: 10px 15px;
+    
+      #pop-up-container > h1 {
+        padding-bottom: 1rem;
       }
       
       #overlay {
@@ -215,11 +193,14 @@
         margin: auto;
         border-radius: 1rem;
         border: none;
+        padding: 0.5rem;
+        transition-duration: 0.7s;
     }
     
     .submit:hover {
         background-color: var(--dark-color);
-        transition-duration: 0.7s;
+        padding: 1rem;
+        border-radius: 2rem;
     }
     
     
@@ -285,7 +266,6 @@
         margin: 2% auto;
         border-radius: 15px;
         text-align: center;
-        
         transition-duration: 0.7s;
     }
     
@@ -300,12 +280,13 @@
         height: 2.2rem;
         border-radius: 20px;
         transition-duration: 0.7s;
+        cursor: pointer;
     }
     
     
     
     
-    @media only screen and (max-width: 840px) {
+    @media only screen and (max-width: 700px) {
     
         .banner {
             top: 2.5rem;
